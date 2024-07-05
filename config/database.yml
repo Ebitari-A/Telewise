@@ -83,3 +83,4 @@ production:
   database: telewise_production
   username: telewise
   password: <%= ENV['TELEWISE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
