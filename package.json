@@ -2,7 +2,7 @@
   "name": "telewise",
   "private": true,
   "engines": {
-    "node": "14.15.4"
+    "node": "20.15.0"
   },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
