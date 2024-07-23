@@ -104,6 +104,7 @@ class ShowsController < ApplicationController
   end
 
   def find_show
+    Rails.logger.info("Params: #{params.inspect}")
     @show = Show.find(params[:id])
   end
 end
