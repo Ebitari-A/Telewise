@@ -14,4 +14,8 @@ class ApplicationController < ActionController::Base
   def default_url_options
   { host: ENV["DOMAIN"] || "localhost:3000" }
   end
+
+  def render_404
+    render file: "#{Rails.root}/public/404.html", status: :not_found
+  end
 end

@@ -21,6 +21,9 @@ Rails.application.routes.draw do
     resources :reviews, only: [:create]
   end
   delete 'reviews/:id', to: 'reviews#destroy', as: :review
+
+  # Catch-all route to handle requests not matched above
+  get '*path', to: 'application#render_404'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
 # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
